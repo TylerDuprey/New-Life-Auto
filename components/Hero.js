@@ -1,4 +1,4 @@
-import React from 'react';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -7,10 +7,14 @@ const Hero = () => {
         <h1>Affordable Car Repairs For People In Need</h1>
         <div className="btn-row">
             <div className="btn-container">
-            <a className="fa-icon btn services-link no-arrow" href="/#">Request an Appointment</a>
+            <Link href="/#">
+                <a className="fa-icon btn services-link no-arrow">Request an Appointment</a>
+            </Link>
             </div>
             <div className="btn-container">
-            <a className="fa-icon btn support-link no-arrow" href="/#">Support Our Mission</a>
+            <Link href="/#">
+                <a className="fa-icon btn support-link no-arrow">Support Our Mission</a>
+            </Link>
             </div>
         </div>
         </div>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Head from 'next/head'
+import Link from 'next/link';
 
 const Header = () => {
 
@@ -24,7 +25,7 @@ const Header = () => {
         <link href="/assets/css/brands.css" rel="stylesheet" />
         <link href="/assets/css/solid.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
       </Head>
 
       <header className="main-header card stick-to-top">
@@ -46,19 +47,29 @@ const Header = () => {
             <nav className="drawer card" role="navigation">
               <ul>
                 <li>
-                  <a className="fa-icon home-link" href="/#home">Home</a>
+                  <Link href="/#home">
+                    <a className="fa-icon home-link">Home</a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="fa-icon about-link" href="/#about">About</a>
+                  <Link href="/#about">
+                    <a className="fa-icon about-link">About</a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="fa-icon services-link" href="/#services">Services</a>
+                  <Link href="/#about">
+                    <a className="fa-icon services-link">Services</a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="fa-icon contact-link" href="/#contact">Contact</a>
+                  <Link href="/#contact">
+                    <a className="fa-icon contact-link">Contact</a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="fa-icon support-link" href="/#support">Support</a>
+                  <Link href="/#support">
+                    <a className="fa-icon support-link">Support</a>
+                  </Link>
                 </li>
               </ul>
             </nav>
